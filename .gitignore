@@ -1,0 +1,18 @@
+# Skip all files
+*
+# ...even if they are in subdirectories
+# !*/
+
+
+# But not `aDir/anotherDir/someOtherDir/aDir/bDir/cDir/a.txt`
+!/zsh
+# zsh/*
+
+!.config/
+.config/*
+
+!.config/nvim/
+# .config/nvim/*
+
+# Includelist some files
+!.gitignore
